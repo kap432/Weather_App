@@ -1,4 +1,4 @@
-const apiKey = 'MY_API_KEY';
+const apiKey = 'f40d6e15bfbc85ea2a3bb4de9b55267e';
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const locationInput = document.getElementById('locationInput');
@@ -30,11 +30,11 @@ function fetchWeather(location) {
             return response.json();
         })
         .then(data => {
-            locationElement.textContent = data.name;
+            //locationElement.textContent = data.name;
             temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
-            descriptionElement.textContent = data.weather[0].description;
-            const weatherDescription = data.weather[0].description;
-            descriptionElement.textContent = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
+         //descriptionElement.textContent = data.weather[0].description;
+          //  const weatherDescription = data.weather[0].description;
+          //descriptionElement.textContent = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
 
             const temp = data.main.temp;
 
