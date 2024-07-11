@@ -81,7 +81,7 @@ button:hover {
 }
 
 #temperature {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -93,4 +93,11 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#fle{
+    display: flex;
+    justify-content:space-between;
+    font-weight: Bold;
+    font-size: 30px;
 }
