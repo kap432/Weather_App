@@ -100,6 +100,7 @@ function fetchWeather(location) {
             locationElement.textContent = 'Sorry, location not found';
             temperatureElement.textContent = '';
             descriptionElement.textContent = '';
+            feels_likeElement.textContent="";
             iconElement.src = 'images/sorry.png';
             document.body.style.backgroundImage = "none";
             iconElement.style.opacity = 1;
